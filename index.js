@@ -1,7 +1,8 @@
 
 import getStars from './src/getStars.js';
 import { getFresnelMat } from "./src/getFresnelMat.js";
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from 'jsm/controls/OrbitControls.js';
 import * as THREE from 'three';
 
 
