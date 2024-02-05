@@ -1,9 +1,4 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-import shad1Shader from './shaders/shad1.glsl'
-import fragmentShader from './shaders/fragment.glsl'
+
 import getStars from './src/getStars.js';
 import { getFresnelMat } from "./src/getFresnelMat.js";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
