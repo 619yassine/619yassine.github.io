@@ -29,7 +29,7 @@ const material = new THREE.MeshStandardMaterial({
     map: new THREE.TextureLoader().load('./img/8k_earth_daymap.jpg'),
     specularMap: new THREE.TextureLoader().load('./img/8k_earth_specular_map.jpg'),
     bumpMap: new THREE.TextureLoader().load('./img/8k_earth_normal_map.jpg'),
-    bumpScale: 0.05
+    bumpScale: 0.005
     // wireframe: true
 });
 // const material = new THREE.ShaderMaterial({
