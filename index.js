@@ -103,9 +103,21 @@ function animate() {
 
 animate();
 
-document.getElementById("container").style.display = "none";
+window.onload = function() {
+  // document.getElementById("container").remove();
+  removeFadeOut(document.getElementById('container'), 2000);
+}
 
 
+function removeFadeOut( el, speed ) {
+  var seconds = speed/1000;
+  el.style.transition = "opacity "+seconds+"s ease";
+
+  el.style.opacity = 0;
+  setTimeout(function() {
+      el.parentNode.removeChild(el);
+  }, speed);
+}
 // Handle window resize
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
