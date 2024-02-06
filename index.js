@@ -5,7 +5,9 @@ import { getFresnelMat } from "./src/getFresnelMat.js";
 import { OrbitControls } from 'jsm/controls/OrbitControls.js';
 import * as THREE from 'three';
 
-
+window.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("container").style.display = "none";
+}, false);
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
@@ -29,7 +31,7 @@ const material = new THREE.MeshStandardMaterial({
     map: new THREE.TextureLoader().load('./img/8k_earth_daymap.jpg'),
     specularMap: new THREE.TextureLoader().load('./img/8k_earth_specular_map.jpg'),
     bumpMap: new THREE.TextureLoader().load('./img/8k_earth_normal_map.jpg'),
-    bumpScale: 0.0005
+    bumpScale: 0.0009
     // wireframe: true
 });
 // const material = new THREE.ShaderMaterial({
