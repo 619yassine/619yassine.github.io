@@ -14,12 +14,13 @@ body {
   width:100vw;
   margin:0;
   padding:0;
-  background:$background;
+//   background:$background;
 }
 
 .container {
 //   display:none;
   position:fixed;
+  background:$background;
   height:100px;
   width:86px;
   transform:scale(#{$scale * .5});
