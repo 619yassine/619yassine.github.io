@@ -13,15 +13,8 @@ body {
   height:100%;
 //   width:100vw;
   margin:0;
-  padding:0;
-//   
+  padding:0;  
 }
-
-// .loader {
-//     background:$background;
-//     // height: 100%; 
-//     // width: 100%;
-// }
 
 .container {
     display: block !important;
@@ -37,7 +30,6 @@ body {
 .h1Container, .h2Container, .h3Container {
     margin-top: 25%; 
     margin-left: 50%;
-    // transform: translate(0%, 0%);
 }
 
 .cube {
