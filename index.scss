@@ -11,7 +11,6 @@ body {
   justify-content:center;
   align-items:center;
   height:100%;
-//   width:100vw;
   margin:0;
   padding:0;  
 }
@@ -21,9 +20,7 @@ body {
   position:fixed;
   background:$background;
   height: 1000%; 
-    width: 1000%;
-//   height:100px;
-//   width:86px;
+  width: 1000%;
   transform:scale(#{$scale * .5});
 }
 
