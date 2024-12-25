@@ -105,7 +105,8 @@ animate();
 
 window.onload = function() {
   // document.getElementById("container").remove();
-  // removeFadeOut(document.getElementById('container'), 2000);
+  removeFadeOut(document.getElementById('container'), 2000);
+  document.getElementById("canvas").style.display = "block";
 }
 
 
