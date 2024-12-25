@@ -9,11 +9,8 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
 camera.position.z = 0.75;
 const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.domElement.setAttribute("class","display: none;");
-console.log(renderer);
 renderer.setSize(innerWidth, innerHeight);
 // renderer.setPixelRatio(window.devicePixelRatio);
-document.body.appendChild(renderer.domElement);
 
 const earthGroup = new THREE.Group();
 earthGroup.rotation.z = -23.4 * Math.PI / 180;
@@ -108,7 +105,7 @@ animate();
 window.onload = function() {
   // document.getElementById("container").remove();
   removeFadeOut(document.getElementById('container'), 2000);
-  // document.getElementById("canvas").style.display = "block";
+  document.body.appendChild(renderer.domElement);
 }
 
 
